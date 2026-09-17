@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Petals and Plush</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+    <h2>Petals & Plush</h2>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#price-list">Price List</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+ <section id="home">
+
+    <h1> Petals & Plush</h1>
+    <p>Handcrafted flowers made with love.</p>
+
+    <div class="gold-line"></div>
+
+
+    <button  onclick="document.getElementById('shop').scrollIntoView()">
+        Shop our flowers
+    </button>
+
+  </section>
+
+  <div class="price-order-container">
+
+    <section id="price-list">
+        <h2>Price List</h2>
+        <div class="gold-line"></div>
+
+        <img src="images/pricelist.jpeg" alt="Petals & Plush Price List">
+    </section>
+
+    <section id="order-information">
+        <h2>Order Information</h2>
+        <div class="gold-line"></div>
+
+        <img src="images/order information.jpeg" alt="Petals & Plush Order Information">
+    </section>
+
+</div>
+   <section id="shop">
+
+        <h2>Our Flowers</h2>
+
+        <p>Handcrafted blooms made to last.</p>
+
+        <div class="carousel">
+
+    <button class="carousel-arrow left-arrow" type="button">←</button>
+
+    <div class="products">
+        <div class="product-card">
+
+          <img src="images/Vase.jpeg" alt="Handcrafted flower arrangement">
+
+          <h3>Signature Vase</h3>
+
+          <p>₦20,000</p>
+
+        <button class="order-button" data-product="Signature Vase"  data-price="20000">Order Now</button>
+        </div>
+
+
+    <div class="product-card">
+
+    <img src="images/cherryblossom.jpeg" alt="Cherry blossom tree">
+
+    <h3>Cherry blossom tree</h3>
+
+    <p>₦80,000</p>
+
+    <button class="order-button"  data-product="Cherry blossom tree" data-price="80000">Order Now</button>
+    </div>
+
+    <div class="product-card">
+    <img src="images/florallamp.jpeg" alt="Floral lamp">
+    <h3>Floral Lamp</h3>
+    <p>₦37,000</p>
+    <button class="order-button" data-product="Floral Lamp" data-price="37000">Order Now</button>
+</div>
+
+<div class="product-card">
+    <img src="images/blue lilies.jpeg" alt="Blue lilies">
+    <h3>Blue Lilies</h3>
+    <p>₦35,000</p>
+    <button class="order-button" data-product="Blue Lilies" data-price="35000">Order Now</button>
+</div>
+
+<div class="product-card">
+    <img src="images/roses.jfif" alt="Rose bouquet">
+    <h3>Rose Bouquet</h3>
+    <p>Price varies by quantity</p>
+  <button type="button" onclick="window.open('https://wa.me/2349035134915?text=Hi%20Petals%20%26%20Plush!%20I%27d%20like%20to%20enquire%20about%20your%20Rose%20Bouquet.', '_blank')">Enquire</button>
+</div>
+
+<div class="product-card">
+    <img src="images/liliesandtulips.jfif" alt="Mixed bouquet">
+    <h3>Mixed Bouquet</h3>
+    <p>₦30,000</p>
+    <button class="order-button" data-product="Mixed Bouquet" data-price="30000">Order Now</button>
+</div>
+
+<div class="product-card">
+    <img src="images/hibiscus.jpeg" alt="Hibiscus">
+    <h3>Hibiscus</h3>
+    <p>Price varies by quantity</p>
+    <button type="button" onclick="window.open('https://wa.me/2349035134915?text=Hi%20Petals%20%26%20Plush!%20I%27d%20like%20to%20enquire%20about%20your%20Hibiscus.', '_blank')">Enquire</button>
+</div>
+
+<div class="product-card">
+    <img src="images/keychains.jpeg" alt="Keychains">
+    <h3>Keychains</h3>
+    <p>₦3,500</p>
+    <button class="order-button" data-product="Keychains" data-price="3500">Order Now</button>
+</div>
+
+<div class="product-card">
+    <img src="images/lotus lamp.jpeg" alt="Lotus Lamp">
+    <h3>Lotus Lamp</h3>
+    <p>₦35,000</p>
+    <button class="order-button" data-product="Lotus Lamp" data-price="35000">Order Now</button>
+</div>
+</div>
+
+ <button class="carousel-arrow right-arrow" type="button">→</button>
+
+</div>
+
+    <div class="custom-orders">
+    <h3>Looking for something unique?</h3>
+    <p>
+        Custom orders are welcome! If you have a specific flower, colour,
+        design, or arrangement in mind, feel free to contact us and we'll
+        bring your idea to life.
+    </p>
+</div>
+
+    </section>
+
+    <section id="cart">
+
+    <h2>Your Cart</h2>
+
+    <div id="cart-items"></div>
+
+    <p id="cart-total">Total: ₦0</p>
+    <button id="checkout-button">Checkout</button>
+
+</section> 
+
+<section id="about">
+
+    <h2>About Petals & Plush</h2>
+
+<div class="gold-line"></div>
+
+    <p>
+         At Petals & Plush, we create beautiful handcrafted flowers designed to last.
+    Each piece is carefully made with love, creativity, and attention to detail,
+    turning simple moments into something worth remembering.
+    </p>
+
+</section>
+
+<section id="contact">
+
+    <h2>Contact Us</h2>
+
+    <div class="gold-line"></div>
+
+    <p>
+        We'd love to hear from you.
+    </p>
+
+     <p>
+        Whatsapp: <a href="https://wa.me/2349035134915">Chat with us</a>
+    </p>
+
+
+</section>
+
+<div id="image-modal">
+    <span id="close-modal">&times;</span>
+    <img id="expanded-image" src="" alt="Expanded product image">
+</div>
+
+<script>
+const orderButtons = document.querySelectorAll(".order-button");
+
+let cart = [];
+
+function displayCart() {
+
+      document.getElementById("cart-items").innerHTML = "";
+
+     if (cart.length === 0) {
+    document.getElementById("cart-items").innerHTML = 
+        "<p>Your cart is empty.</p>" +
+        "<button onclick=\"document.getElementById('shop').scrollIntoView()\">Continue Shopping</button>";
+}
+
+    cart.forEach(function(item) {
+        document.getElementById("cart-items").innerHTML +=
+           "<p class='cart-item'><strong>" + item.name + " </strong>× " + item.quantity + " — ₦" + (Number(item.price) * item.quantity).toLocaleString() + 
+            " <br><br><button class='cart-minus' data-product='" + item.name + "'>−</button>" +
+            " <button class='cart-remove' data-product='" + item.name + "'>Remove</button>" +
+            " <button class='cart-plus' data-product='" + item.name + "'>+</button></p>";
+    });
+
+    document.querySelectorAll(".cart-remove").forEach(function(button) {
+    button.addEventListener("click", function() {
+        let productToRemove = button.dataset.product;
+
+        cart = cart.filter(function(item) {
+            return item.name !== productToRemove;
+        });
+
+        displayCart();
+
+        let total = 0;
+
+        cart.forEach(function(item) {
+            total += Number(item.price) * item.quantity;
+        });
+
+        document.getElementById("cart-total").innerHTML = "Total: ₦" + total.toLocaleString();
+    });
+});
+
+document.querySelectorAll(".cart-minus").forEach(function(button) {
+    button.addEventListener("click", function() {
+
+             let productToDecrease = button.dataset.product;
+
+             let product = cart.find(function(item) {
+                 return item.name === productToDecrease;
+           
+         });
+
+         if (product.quantity > 1) {
+                product.quantity -= 1;
+         }
+
+          let total = 0;
+
+          cart.forEach(function(item) {
+              total += Number(item.price) * item.quantity;
+            });
+
+            displayCart();
+
+        document.getElementById("cart-total").innerHTML = "Total: ₦" + total.toLocaleString();
+
+          });
+    });
+
+ document.querySelectorAll(".cart-plus").forEach(function(button) { 
+    button.addEventListener("click", function() {
+ 
+        let productToIncrease = button.dataset.product;
+
+        let product = cart.find(function(item) {
+            return item.name === productToIncrease;
+         
+              });
+
+         product.quantity += 1;
+
+         let total = 0;
+
+         cart.forEach(function(item) {
+             total += Number(item.price) * item.quantity;
+        });
+
+          displayCart();
+           
+          document.getElementById("cart-total").innerHTML = "Total: ₦" + total.toLocaleString();
+
+           });
+         });
+        }
+
+orderButtons.forEach(function(button) {
+    button.addEventListener("click", function() {
+
+        let product = button.dataset.product;
+        let price = button.dataset.price;
+
+        let existingProduct = cart.find(function(item) {
+    return item.name === product;
+});
+
+if (existingProduct) {
+    existingProduct.quantity += 1;
+} else {
+
+    cart.push({
+        name: product,
+        price: price,
+        quantity: 1
+});
+}
+
+let total = 0;
+
+cart.forEach(function(item) {
+   total += Number(item.price) * item.quantity;
+});
+
+document.getElementById("cart-total").innerHTML = "Total: ₦" + total .toLocaleString();
+
+displayCart();
+
+        alert("You selected " + product +  " for ₦" + price + "!");
+    });
+});
+
+document.getElementById("checkout-button").addEventListener("click", function() {
+
+    if (cart.length === 0) {
+        alert("Your cart is empty!");
+        return;
+    }
+
+  let message = "Hi Petals & Plush! I'd like to order:%0A%0A";
+
+cart.forEach(function(item) {
+    message += item.name + " × " + item.quantity + " — ₦" + 
+        (Number(item.price) * item.quantity).toLocaleString() + "%0A";
+});
+
+message += "%0ATotal: ₦" + cart.reduce(function(total, item) {
+    return total + Number(item.price) * item.quantity;
+}, 0).toLocaleString();
+
+message += "%0A%0AThank you! 💕";
+
+window.open("https://wa.me/2349035134915?text=" + message, "_blank");
+
+});
+
+displayCart();
+
+const products = document.querySelector(".products");
+const leftArrow = document.querySelector(".left-arrow");
+const rightArrow = document.querySelector(".right-arrow");
+const productImages = document.querySelectorAll(".product-card img");
+const imageModal = document.getElementById("image-modal");
+const expandedImage = document.getElementById("expanded-image");
+const closeModal = document.getElementById("close-modal");
+
+productImages.forEach(function(image) {
+    image.addEventListener("click", function() {
+    expandedImage.src = image.src;
+    imageModal.style.display = "flex";
+    console.log("Image clicked!");
+      });
+});
+
+closeModal.addEventListener("click", function() {
+    imageModal.style.display = "none";
+});
+
+leftArrow.addEventListener("click", function() {
+    products.scrollBy({
+        left: -350,
+        behavior: "smooth"
+    });
+});
+
+rightArrow.addEventListener("click", function() {
+    products.scrollBy({
+        left: 350,
+        behavior: "smooth"
+    });
+});
+
+</script>
+
+<footer>
+
+    <h2>Petals & Plush</h2>
+
+    <p>Handcrafted flowers made to last.</p>
+
+    <p>© 2026 Petals & Plush. All rights reserved.</p>
+
+</footer>
+
+</body>
+</html>
