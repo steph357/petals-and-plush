@@ -337,20 +337,20 @@ document.getElementById("checkout-button").addEventListener("click", function() 
         return;
     }
 
-  let message = "Hi Petals & Plush! I'd like to order:%0A%0A";
+  let message = "Hi Petals & Plush! I'd like to order:\n\n";
 
 cart.forEach(function(item) {
     message += item.name + " × " + item.quantity + " — ₦" + 
         (Number(item.price) * item.quantity).toLocaleString() + "%0A";
 });
 
-message += "%0ATotal: ₦" + cart.reduce(function(total, item) {
+message += "\nTotal: ₦" + cart.reduce(function(total, item) {
     return total + Number(item.price) * item.quantity;
 }, 0).toLocaleString();
 
-message += "%0A%0AThank you! 💕";
+message += "\n\nThank you! 💕";
 
-window.open("https://wa.me/2349035134915?text=" + message, "_blank");
+window.open("https://wa.me/2349035134915?text=" + encodeURIComponent(message), "_blank");
 
 });
 
